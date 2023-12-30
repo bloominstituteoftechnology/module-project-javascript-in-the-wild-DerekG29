@@ -94,8 +94,11 @@
     // processBooleans([1, 0, 0, 1, 0]) // should return ["Y", "N", "N", "Y", "N"]
     // ❗ Notes
     // 🧠 Using map, arrow function syntax, and the ternary, you can make this function a short one-liner
-    const processBooleans = () => {
-
+    const processBooleans = (array) => {
+      const newArray = array.map(int => {
+        return int ? 'Y' : 'N';
+      })
+      return newArray;
     }
 
     // 👉 CHALLENGE 6
